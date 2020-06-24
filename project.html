@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}	
+	body{
+		background-image: url('https://cdn.pixabay.com/photo/2017/04/19/13/17/computer-2242266_960_720.jpg');
+		background-size: cover;
+		
+		font-family: sans-serif;
+
+	}
+	.menu{
+		background-color: rgb(0,100,0);
+		text-align: center;
+	}
+	.menu ul
+	{
+		display: inline-flex;
+		list-style: none;
+		color: white;
+	}
+	.menu ul li
+	{
+		width: 120px;
+		margin: 15px;
+		padding: 15px;
+	}
+	.menu ul li a
+	{
+		text-decoration: none;
+		color: white;
+	}
+	.active,.menu ul li:hover
+	{
+		background-color: #2bad0d;
+		border-radius: 3px; 
+	}
+	.menu .fa
+	{
+		margin-right: 8px;
+	}
+	.sub-menu1
+	{
+		display: none;
+	}
+	.menu ul li:hover .sub-menu1
+	{
+		display: block;
+		position: absolute;
+		background-color: rgb(0,100,0);
+		margin-top: 15px;
+		margin-left: -15px;
+	}
+	.menu ul li:hover .sub-menu1 ul{
+		display: block;
+		margin: 10px;
+	}
+     .menu ul li:hover .sub-menu1 ul li
+     {
+     	width: 150px;
+     	padding: 10px;
+     	border-bottom: 1px dotted white;
+     	background-color: transparent;
+     	border-radius: 0;
+     	text-align: left;
+     }
+     .menu ul li:hover .sub-menu1 ul li:last-child
+     {
+     	border-bottom: none;
+     }
+      .menu ul li:hover .sub-menu1 ul li a:hover
+      {
+      	color:gray;
+      }
+      .fa-angle-right
+      {
+      	float:right;
+      }
+      .sub-menu2
+      {
+      	display: none;
+      }
+      .hover-me:hover .sub-menu2
+      {
+      	display: block;
+      	position: absolute;
+      	margin-top: -40px;
+      	margin-left: 140px;
+      	background-color: rgb(0,100,0);
+      }
+
+	</style>
+<div class="menu">
+	<ul>
+		<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="#"><i class="fa fa-user"></i>About Us</a>
+			<div class="sub-menu1">
+				<ul>
+				<li><a href="#">Mission</a></li>
+				<li><a href="#">vision</a></li>
+				<li><a href="#">Team</a></li>
+				</ul>
+			</div>
+
+
+		</li>
+		<li><a href="#"><i class="fa fa-clone"></i>Services</a>
+			<div class="sub-menu1">
+				<ul>
+				<li><a href="#">Web Designing</a></li>
+				<li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
+				<div class="sub-menu2">
+				<ul>
+				<li><a href="#">SEO</a></li>
+				<li><a href="#">Social Media</a></li>
+				<li><a href="#">Email Marketing</a></li>
+				</ul>
+			</div>	
+				</li>
+				<li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+					<div class="sub-menu2">
+				<ul>
+				<li><a href="#">ios App</a></li>
+				<li><a href="#">Andriod App</a></li>
+				<li><a href="#">Flutter App</a></li>
+				<li><a href="#">Ionic App</a></li>
+				</ul>
+			</div>
+				</li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="#"><i class="fa fa-users"></i>Clients</a></li>
+		<li><a href="#"><i class="fa fa-angellist"></i>Investers</a></li>
+		<li><a href="#"><i class="fa fa-inr"></i>Pricing</a></li>
+		<li><a href="#"><i class="fa fa-edit"></i>Traning</a></li>
+		<li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+
+
+	</ul>
+</div>
+</body>
+</html>
